@@ -45,7 +45,7 @@ makeCacheMatrix <- function(x = matrix()) {
 ## documentation.
 
 cacheSolve <- function(x, ...) {
-        if (class(x)=="matrix") { # try to do the right thing if we
+        if (is.matrix(x)) { # try to do the right thing if we
                                   # got not the special object but a
                                   # normal matrix
                 warning("Got not the special object but a matrix")
